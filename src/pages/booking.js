@@ -31,6 +31,7 @@ const Booking = () => {
       option2: 'Option 2-2'
     }) 
   }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [answer1, answer2])
 
   const answerHandler = (e) => {
