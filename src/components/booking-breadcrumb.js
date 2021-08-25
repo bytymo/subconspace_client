@@ -2,7 +2,6 @@ import React from 'react'
 import { Fragment } from 'react';
 
 const BookingBreadcrumb = ({answers, setAnswers}) => {
-  console.log(answers);
   const goBack = () => {
     setAnswers({
       ...answers,
