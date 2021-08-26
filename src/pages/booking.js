@@ -20,7 +20,7 @@ const Booking = () => {
         <div className='row row-cols-1 row-cols-md-2 g-4'>
           <div className="col-12 col-md-6">
             <PopupButton
-              className='btn btn-info w-100 h-100'
+              className='btn btn-primary w-100 h-100'
               text={option1}
               url='https://calendly.com/subconcoachtina/15min'
               prefill={{
@@ -33,7 +33,7 @@ const Booking = () => {
           <div className="col-md-6">
             <PopupButton
               onClose={completeHandler}
-              className='btn btn-info w-100 h-100'
+              className='btn btn-primary w-100 h-100'
               text={option2}
               url='https://calendly.com/subconcoachtina/15min'
               prefill={{
@@ -46,7 +46,7 @@ const Booking = () => {
           <div className="col-12 col-md-6">
             <PopupButton
               onClick={completeHandler}
-              className='btn btn-info w-100 h-100'
+              className='btn btn-primary w-100 h-100'
               text={option3}
               url='https://calendly.com/subconcoaching/15'
               prefill={{
@@ -59,7 +59,7 @@ const Booking = () => {
           <div className="col-12 col-md-6">
             <PopupButton
               onClick={completeHandler}
-              className='btn btn-info w-100 h-100'
+              className='btn btn-primary w-100 h-100'
               text={option4}
               url='https://calendly.com/subconcoaching/15'
               prefill={{

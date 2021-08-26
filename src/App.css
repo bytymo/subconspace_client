@@ -1,7 +1,40 @@
+:root {
+  --primary: #5b3b97;
+  --primary-light: #6c46b3;
+  --primary-dark: #4a307b;
+  --secondary: #7e74b6;
+  --blue: #7ed3f0;
+  --grey: #c2c2c2;
+}
+
 .App {
   text-align: center;
 }
 
 .container {
   min-height: 90vh;
+}
+
+.title {
+  color: var(--secondary);
+}
+
+.btn-media {
+  color: var(--primary);
+}
+
+.btn-media:hover {
+  color: var(--primary-light);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  color: #fff;
 }
