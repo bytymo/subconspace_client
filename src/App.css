@@ -38,3 +38,11 @@
   border-color: var(--primary-light);
   color: #fff;
 }
+
+.popup {
+  min-height: 80px;
+}
+
+.popup > * {
+  border-radius: 20px;
+}

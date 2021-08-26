@@ -18,7 +18,7 @@ const Booking = () => {
       <h2 className="h-100 pt-5">I am looking for...</h2>
       <div className="pt-5 d-grid gap-2 d-md-block">
         <div className='row row-cols-1 row-cols-md-2 g-4'>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 popup">
             <PopupButton
               className='btn btn-primary w-100 h-100'
               text={option1}
@@ -30,7 +30,7 @@ const Booking = () => {
               }}
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-12 col-md-6 popup">
             <PopupButton
               onClose={completeHandler}
               className='btn btn-primary w-100 h-100'
@@ -43,7 +43,7 @@ const Booking = () => {
               }}
             />
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 popup">
             <PopupButton
               onClick={completeHandler}
               className='btn btn-primary w-100 h-100'
@@ -56,7 +56,7 @@ const Booking = () => {
               }}
             />
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 popup">
             <PopupButton
               onClick={completeHandler}
               className='btn btn-primary w-100 h-100'

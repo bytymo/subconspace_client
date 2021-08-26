@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/footer';
 
 const Thankyou = () => {
   return (
@@ -23,6 +24,7 @@ const Thankyou = () => {
         }}
         src="https://www.youtube.com/embed/80iL6vBuIxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
+      <Footer />
     </div>
   )
 }
