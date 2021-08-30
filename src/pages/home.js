@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 
 import male from '../images/male.png';
 import female from '../images/female.png';
+import Divider from '../components/divider';
 
 const Home = () => {
   return (
@@ -23,18 +24,19 @@ const Home = () => {
 
       <h3 className='title'>Who we are</h3>
       <article id="will" className='mb-4 row'>
-        <div className="col-12 col-md-6 order-md-last">
+        <div className="col-12 col-md-6">
           <img src={male} alt="profile of Will" width='300px' />
         </div>
         <div className='col-12 col-md-6 float-md-start'>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloremque accusamus adipisci illum culpa, ea eaque recusandae, ab voluptatum molestiae perferendis. Magnam et, culpa dolorem molestias fugiat illum cumque soluta iure maiores unde possimus qui asperiores! Natus quaerat voluptas aspernatur, nam earum officiis veniam doloremque, ea sequi, vero repellendus neque!</p>
           <PopupButton
-            className='btn btn-primary col-4'
+            className='btn btn-primary'
             text='Book Will'
             url='https://calendly.com/subconcoaching/15'
           />
         </div>
       </article>
+      <Divider />
       <article id="tina" className='mb-4 row d-flex'>
         <div className='col-12 col-md-6'>
         <img src={female} alt="profile of Tina" width='300px' />

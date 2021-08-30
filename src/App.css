@@ -1,9 +1,12 @@
 :root {
   --primary: #5b3b97;
-  --primary-light: #6c46b3;
-  --primary-dark: #4a307b;
+  --primary-light: #6b4ea1;
+  --primary-dark: #513587;
   --secondary: #7e74b6;
+  --secondary-light: #8a81bd;
+  --secondary-dark: #7168a3;
   --blue: #7ed3f0;
+  --blue-light: #8ad7f1;
   --grey: #c2c2c2;
 }
 
@@ -28,14 +31,15 @@
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: #fff;
+  background-color: transparent;
+  border-color: var(--blue);
+  color: var(--blue);
+  font-weight: 700;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-light);
-  border-color: var(--primary-light);
+  background-color: var(--blue);
+  border-color: var(--blue);
   color: #fff;
 }
 
@@ -45,4 +49,47 @@
 
 .popup > * {
   border-radius: 20px;
+}
+
+.copy {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+.divider {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 40px;
+  width: 100%;  
+  margin-bottom: 20px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+  width: 55%;
+  background-color: var(--primary);
+}
+
+.box2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 25px;
+  width: 50%;
+  background-color: var(--secondary);
+}
+.box3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 8px;
+  width: 250%;
+  background-color: var(--blue);
 }
