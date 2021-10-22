@@ -4,9 +4,9 @@ import Footer from '../components/footer';
 const Thankyou = () => {
   return (
     <div className="d-grid gap-2 d-md-block">
-      <p className='display-6 d-block w-100 mt-5'>Thank you for booking. We look forward to meeting with you!</p>
+      <p className='display-6 d-block w-100 mt-5 text-purple'>Thank you for booking. We look forward to meeting with you!</p>
       <p className="lead">In the meantime, I encourage you to check out our YouTube and Instagram pages for some mindfulness tips and meditation segments. Here is a sample meditation to boost your mood for the day. Namaste.</p>
-      <p className="lead"><a href="/" style={{textDecoration: 'none'}}><i class="fas fa-chevron-left"></i> Go back to Homepage</a></p>
+      <p className="lead"><strong><a href="/" className="text-purple" style={{textDecoration: 'none'}}><i class="fas fa-chevron-left">  </i> Go back to Homepage</a></strong></p>
       <div
         className="video"
         style={{

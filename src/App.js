@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Navbar from './components/navbar';
 import Booking from './pages/booking';
 import Thankyou from './pages/thankyou';
+import UserAgreement from './pages/user-agreement';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
          <Navbar />
         <div className='container'>
           <Switch>
+            <Route exact path='/agreement' component={UserAgreement} />
             <Route exact path='/booking' component={Booking} />
             <Route exact path='/thankyou' component={Thankyou} />
             <Route exact path='/' component={Home} />

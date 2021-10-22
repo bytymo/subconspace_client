@@ -1,75 +1,34 @@
-import React from 'react'
-import { PopupButton } from "react-calendly";
-import { useHistory } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Booking = () => {
-  const history = useHistory()
-  const option1= 'Discovering my passion/purpose'
-  const option2= 'Increasing the mind/body connection through yoga'
-  const option3= 'Improving my overall mood and mindset'
-  const option4= 'Transitioning to and thriving on a plant based lifestyle'
+  const location = useLocation();
+  const { bookWill, bookTina } = location.state;
 
-  const completeHandler = (e) => {
-    history.go('/')
-  }
+  const option1= 'discover my passion/purpose';
+  const option2= 'increase the mind/body connection through yoga';
+  const option3= 'improve my overall mood and mindset';
+  const option4= 'transition to and thriving on a plant based lifestyle';
 
   return (
     <div className='h-100'>
-      <h2 className="h-100 pt-5">I am looking for...</h2>
+      <h2 className="h-100 pt-5">I am looking to...</h2>
       <div className="pt-5 d-grid gap-2 d-md-block">
         <div className='row row-cols-1 row-cols-md-2 g-4'>
           <div className="col-12 col-md-6 popup">
-            <PopupButton
-              className='btn btn-primary w-100 h-100'
-              text={option1}
-              url='https://calendly.com/subconcoachtina/15min'
-              prefill={{
-                customAnswers: {
-                  a1: `I am looking for ${option1}`
-                }
-              }}
-            />
+            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookTina, message: option1}}}>{option1.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <PopupButton
-              onClose={completeHandler}
-              className='btn btn-primary w-100 h-100'
-              text={option2}
-              url='https://calendly.com/subconcoachtina/15min'
-              prefill={{
-                customAnswers: {
-                  a1: `I am looking for ${option2}`
-                }
-              }}
-            />
+            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookTina, message: option2}}}>{option2.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <PopupButton
-              onClick={completeHandler}
-              className='btn btn-primary w-100 h-100'
-              text={option3}
-              url='https://calendly.com/subconcoaching/15'
-              prefill={{
-                customAnswers: {
-                  a1: `I am looking for ${option3}`
-                }
-              }}
-            />
+            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookWill, message: option3}}}>{option3.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <PopupButton
-              onClick={completeHandler}
-              className='btn btn-primary w-100 h-100'
-              text={option4}
-              url='https://calendly.com/subconcoaching/15'
-              prefill={{
-                customAnswers: {
-                  a1: `I am looking for ${option4}`
-                }
-              }}
-            />
+            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookWill, message: option4}}}>{option4.toLocaleUpperCase()}</Link>
           </div>
         </div>
+        <a className="btn btn-outline-info" href='/thankyou' style={{marginTop: '50px'}}>To Thank you page</a>
       </div>
     </div>
   )

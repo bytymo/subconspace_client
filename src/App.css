@@ -8,18 +8,87 @@
   --blue: #7ed3f0;
   --blue-light: #8ad7f1;
   --grey: #c2c2c2;
+  --dark-grey: #333;
 }
 
 .App {
   text-align: center;
+  background-color: var(--dark-grey);
+  color: var(--grey);
+  min-height: 100vh;
+}
+
+.text-purple {
+  color: var(--secondary);
+}
+
+.text-dark {
+  color: var(--dark-grey)
+}
+
+.text-purple:hover {
+  color: var(--secondary-light)
 }
 
 .container {
   min-height: 90vh;
 }
 
+.modal-content {
+  /* background-color: red; */
+  background-image: url('images/moonscape-meditation.png');
+  background-size: cover;  
+  background-repeat: no-repeat;
+}
+
+.profile-bg {
+  background-image: url('images/boat2.jpg');
+  background-size: cover;  
+  background-repeat: no-repeat;
+}
+
+.background-tint {
+  background-color: rgba(0,0,0, 0.6);
+  background-blend-mode: multiply;
+}
+
+.background-tint-modal {
+  background-color: rgba(0,0,0, 0.4);
+  background-blend-mode: multiply;
+}
+
+.modal-text {
+  font-weight: 600;
+}
+
+.modal-footer,
+.modal-header {
+  border: none;
+}
+
+.nav-title {
+  color: var(--grey)
+}
+
+.nav-title:hover {
+  color: var(--grey)
+}
+
 .title {
   color: var(--secondary);
+}
+
+.btn-purple {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.btn-purple:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--dark-grey);
 }
 
 .btn-media {
@@ -30,7 +99,7 @@
   color: var(--primary-light);
 }
 
-.btn-primary {
+.btn-primary, .btn-primary:active, .btn-primary:visited {
   background-color: transparent;
   border-color: var(--blue);
   color: var(--blue);
@@ -40,7 +109,7 @@
 .btn-primary:hover {
   background-color: var(--blue);
   border-color: var(--blue);
-  color: #fff;
+  color: var(--dark-grey);
 }
 
 .popup {
@@ -70,25 +139,36 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  height: 100%;
-  width: 55%;
-  background-color: var(--primary);
+  height: 4px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+    left,
+    var(--dark-grey),
+    var(--primary),
+    var(--dark-grey)
+  );
 }
 
 .box2 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  flex-direction: column;
-  height: 25px;
-  width: 50%;
-  background-color: var(--secondary);
+  height: 4px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+    left,
+    var(--dark-grey),
+    var(--blue),
+    var(--dark-grey)
+  );
 }
-.box3 {
+
+.box-gap {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   height: 8px;
-  width: 250%;
-  background-color: var(--blue);
+  width: 100%;
+  background-color: transparent;
+
 }
