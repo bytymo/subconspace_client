@@ -32,6 +32,9 @@
 
 .container {
   min-height: 90vh;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
 }
 
 .modal-content {
@@ -42,9 +45,19 @@
 }
 
 .profile-bg {
-  background-image: url('images/boat2.jpg');
+  background-image: url('images/boat.jpg');
   background-size: cover;  
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tinaProfile {
+  background-image: url('images/tinaProfile.jpg');
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 50%;
+  margin: 15px;
 }
 
 .background-tint {
@@ -99,7 +112,7 @@
   color: var(--primary-light);
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:visited {
+.btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
   background-color: transparent;
   border-color: var(--blue);
   color: var(--blue);

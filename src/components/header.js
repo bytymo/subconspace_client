@@ -1,9 +1,13 @@
 import React from 'react';
-import zen from '../images/meditation.jpeg';
+import black from '../images/lotus-black.png';
+import blue from '../images/lotus-blue.png';
+import dark_purple from '../images/lotus-purple-1.png';
+import light_purple from '../images/lotus-purple-2.png';
+import white from '../images/lotus-white.png';
 
 const Header = () => {
   return (
-    <img src={zen} alt="meditation pose" title='Photo by Tianhao Zhang on Unsplash' width='100%' />
+    <img src={white} alt="lotus flower expanding and compressing to mirror breathing" title='Photo by Tianhao Zhang on Unsplash' width='100%' />
   )
 }
 
