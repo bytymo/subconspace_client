@@ -43,11 +43,12 @@ const Home = () => {
           </div>
         </article>
         <div className="justify-content-center">
-          <img className='align-middle' src={light_purple} alt="lotus flower expanding and compressing to mirror breathing" title='Photo by Tianhao Zhang on Unsplash' width='80px' />
+          <img className='align-middle' src={light_purple} alt="light purple lotus flower divider" width='80px' />
         </div>
+        <h3>Tina Plantillas</h3>
         <article id="tina" className='m-0 row d-flex justify-content-end profile-bg'>
-          <div className='py-3 col-12 col-md-3 tinaProfile' />
-          <div className="col-md-1"></div>
+          {/* <div className='py-3 col-12 col-md-3 tinaProfile' />
+          <div className="col-md-1"></div> */}
           <div className='py-3 col-12 col-md-7 background-tint text-white'>
             <p>Tina Plantillas is a Certified Spiritual Life Coach, Yoga and Meditation Teacher, Movement facilitator, and Commercial Credit Corporate extraordinaire.</p>
             <p>Tina’s curiosity for self improvement started at a young age always picking up a self-help book from the book store. In exploration to find a way to get into better shape she found yoga in 2010, unexpectedly discovering the mind-body connection that would change her life.</p>
