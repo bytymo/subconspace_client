@@ -18,7 +18,7 @@ const Home = () => {
       <Header />
       <NewsletterModal />
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletter">
-        Launch demo modal
+        Launch newsletter ad
       </button>
       <div className="d-grid gap-3 w-100">
         <article className='p-3 bg-white text-dark'>
