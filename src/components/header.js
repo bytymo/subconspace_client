@@ -5,7 +5,7 @@ import React from 'react';
 // import light_purple from '../images/lotus-purple-2.png';
 // import white from '../images/lotus-white.png';
 // import lotus from '../images/whiteLotus.svg';
-import lotus from '../images/whiteLotus.mp4';
+import lotus from '../images/lotus.mp4';
 
 const Header = () => {
   return (
