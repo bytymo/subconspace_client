@@ -37,10 +37,7 @@
   min-width: 100%;
 }
 
-video {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
+.lotusVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;

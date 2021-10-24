@@ -4,19 +4,20 @@ import React from 'react';
 // import dark_purple from '../images/lotus-purple-1.png';
 // import light_purple from '../images/lotus-purple-2.png';
 // import white from '../images/lotus-white.png';
-import lotus from '../images/whiteLotus.svg';
+// import lotus from '../images/whiteLotus.svg';
+import lotus from '../images/whiteLotus.mp4';
 
 const Header = () => {
   return (
-    <img src={lotus} alt="lotus flower expanding and compressing to mirror breathing" title='Photo by Tianhao Zhang on Unsplash' width='100%' />
-    // <video
-    //     class="lotusVideo"
-    //     src={white}
-    //     muted
-    //     loop
-    //     autoplay
-    //     playsinline
-    //   ></video>
+    <video
+        class="lotusVideo"
+        type="video/mp4"
+        src={lotus}
+        loop
+        muted
+        autoPlay
+        playsInline
+      ></video>
   )
 }
 

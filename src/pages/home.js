@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import light_purple from '../images/lotus-purple-2.png';
@@ -12,14 +12,26 @@ import NewsletterModal from '../modals/newsletter-modal';
 const Home = () => {
   const bookWill = 'https://calendly.com/subconcoaching/15';
   const bookTina = 'https://calendly.com/subconcoachtina/15min';
+  let btn;
+
+  useEffect(() => {
+    setTimeout(function(){ btn.click(); }, 5000);
+  }, [btn]);
 
   return (
     <Fragment>
       <Header />
       <NewsletterModal />
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletter">
+      <button
+        type="button"
+        class="btn btn-primary d-none"
+        data-bs-toggle="modal"
+        data-bs-target="#newsletter"
+        ref={node => (btn = node)}
+      >
         Launch newsletter ad
       </button>
+
       <div className="d-grid gap-3 w-100">
         <article className='p-3 bg-white text-dark'>
         <h2 className='title'>Who we are</h2>
