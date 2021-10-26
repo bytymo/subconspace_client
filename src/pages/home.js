@@ -87,7 +87,7 @@ const Home = () => {
               <div className="d-block w-100">
                 <img src={male} class="testimonialImg" alt="male headshot" />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const Home = () => {
               <div className="d-block w-100">
                 <img src={female} class="testimonialImg" alt="female headshot" />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const Home = () => {
               <div className="d-block w-100">
                 <img src={male} class="testimonialImg" alt="male headshot" />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, totam!</p>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Home = () => {
               <div className="d-block w-100">
                 <img src={female} class="testimonialImg" alt="female headshot" />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-block">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
