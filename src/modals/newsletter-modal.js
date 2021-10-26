@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 
 const NewsletterModal = () => {
-  // TODO create 4s timer to auto open modal
   const [modalDisplay, setModalDisplay] = useState('none');
   const [personalInfo, setPersonalInfo] = useState({
     fullName: '',
@@ -24,7 +23,7 @@ const NewsletterModal = () => {
     setModalDisplay('block');
   };
 
-  setTimeout(displayModal, 3000);
+  setTimeout(displayModal, 10000); // 10 seconds
 
   return (
     <div style={{display: {modalDisplay}}} class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden='true'>

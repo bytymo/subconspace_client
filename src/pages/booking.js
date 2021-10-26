@@ -16,16 +16,16 @@ const Booking = () => {
       <div className="pt-5 d-grid gap-2 d-md-block">
         <div className='row row-cols-1 row-cols-md-2 g-4'>
           <div className="col-12 col-md-6 popup">
-            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookTina, message: option1}}}>{option1.toLocaleUpperCase()}</Link>
+            <Link className='btn btn-primary w-100 h-100 surveyBtn' to={{pathname: '/agreement', state: {url: bookTina, message: option1}}}>{option1.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookTina, message: option2}}}>{option2.toLocaleUpperCase()}</Link>
+            <Link className='btn btn-primary w-100 h-100 surveyBtn' to={{pathname: '/agreement', state: {url: bookTina, message: option2}}}>{option2.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookWill, message: option3}}}>{option3.toLocaleUpperCase()}</Link>
+            <Link className='btn btn-primary w-100 h-100 surveyBtn' to={{pathname: '/agreement', state: {url: bookWill, message: option3}}}>{option3.toLocaleUpperCase()}</Link>
           </div>
           <div className="col-12 col-md-6 popup">
-            <Link className='btn btn-primary w-100 h-100 align-middle' to={{pathname: '/agreement', state: {url: bookWill, message: option4}}}>{option4.toLocaleUpperCase()}</Link>
+            <Link className='btn btn-primary w-100 h-100 surveyBtn' to={{pathname: '/agreement', state: {url: bookWill, message: option4}}}>{option4.toLocaleUpperCase()}</Link>
           </div>
         </div>
         <a className="btn btn-outline-info" href='/thankyou' style={{marginTop: '50px'}}>To Thank you page</a>
