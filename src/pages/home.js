@@ -96,7 +96,7 @@ const Home = () => {
                 <img src={female} class="testimonialImg" alt="female headshot" />
               </div>
               <div class="carousel-caption d-block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</p>
+                <p>Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</p>
               </div>
             </div>
             <div class="carousel-item">
