@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import axios from "axios";
 
 const NewsletterModal = () => {
   const [modalDisplay, setModalDisplay] = useState('none');
@@ -16,7 +17,13 @@ const NewsletterModal = () => {
 
   const handleSubmit = () => {
     console.log(personalInfo);
-    // TODO connect to db
+    axios({
+      method: 'post',
+      url: '/users',
+      data: {
+        personalInfo
+      }
+    });
   };
 
   const displayModal = () => {

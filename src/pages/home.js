@@ -2,8 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import tinaProfile from '../images/tinaProfile.jpg';
-import male from '../images/male.png';
-import female from '../images/female.png';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -35,6 +33,7 @@ const Home = () => {
       </button>
 
       <Header />
+      <Divider />
       <div className="d-grid gap-3 w-100">
         <article className='p-3 bg-white text-dark'>
         <h1 className='title'>Who we are</h1>
@@ -45,24 +44,9 @@ const Home = () => {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in assumenda mollitia quidem odio reprehenderit neque recusandae voluptatum cum, dicta magnam maxime quisquam porro! Ea aut, nesciunt iure hic eligendi maxime blanditiis voluptate beatae quas quam! Enim veritatis ratione culpa voluptatibus repellendus quo, mollitia eos sit eius quis, voluptas accusamus!</p>
         </article>
         <h1 className='title'>Meet the coaches</h1>
-        <h2>Will Plantillas</h2>
-        <article id="will" className='m-0 h-100 row d-flex justify-content-end profile-bg'>
-          <div className="profileBorder py-3 col-12 col-lg-3 m-auto">
-            <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
-          </div>
-          <div className='py-3 col-12 col-lg-7'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error exercitationem optio cupiditate aperiam sed sequi, officia ipsam impedit minima rem veritatis. Voluptatibus perferendis ipsam illum doloribus quasi magni dignissimos.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui laudantium. Minus fuga inventore accusamus neque a, iure nesciunt aliquam veritatis fugiat laborum et consequuntur pariatur ratione quibusdam alias autem aut voluptates doloremque provident nam. Assumenda, officia! Ipsa sint facere omnis reprehenderit odio? Facere obcaecati quae ipsum assumenda, quaerat recusandae.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil doloribus consequatur suscipit adipisci expedita ex porro atque fugiat incidunt?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur deserunt dignissimos et accusamus facere odit doloremque, neque eos voluptatem asperiores illo voluptatibus nam eum quo placeat consequuntur totam eveniet odio? Modi totam eum nobis neque qui? Excepturi, numquam velit!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in assumenda mollitia quidem odio reprehenderit neque recusandae voluptatum cum, dicta magnam maxime quisquam porro! Ea aut, nesciunt iure hic eligendi maxime blanditiis voluptate beatae quas quam! Enim veritatis ratione culpa voluptatibus repellendus quo, mollitia eos sit eius quis, voluptas accusamus!</p>
-            <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookWill}}}>Book Will</Link>
-          </div>
-        </article>
-        <LotusDivider />
         <h2>Tina Plantillas</h2>
         <article id="tina" className='m-0 row d-flex justify-content-end profile-bg'>
-          <div className="profileBorder py-3 col-12 col-lg-3 m-auto">
+          <div className="py-3 col-12 col-lg-3 m-auto">
             <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
           </div>
           <div className='py-3 col-12 col-lg-7'>
@@ -75,6 +59,21 @@ const Home = () => {
           </div>
         </article>
         <LotusDivider />
+        <h2>Will Plantillas</h2>
+        <article id="will" className='m-0 h-100 row d-flex justify-content-end profile-bg'>
+          <div className="py-3 col-12 col-lg-3 m-auto">
+            <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
+          </div>
+          <div className='py-3 col-12 col-lg-7'>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error exercitationem optio cupiditate aperiam sed sequi, officia ipsam impedit minima rem veritatis. Voluptatibus perferendis ipsam illum doloribus quasi magni dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui laudantium. Minus fuga inventore accusamus neque a, iure nesciunt aliquam veritatis fugiat laborum et consequuntur pariatur ratione quibusdam alias autem aut voluptates doloremque provident nam. Assumenda, officia! Ipsa sint facere omnis reprehenderit odio? Facere obcaecati quae ipsum assumenda, quaerat recusandae.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil doloribus consequatur suscipit adipisci expedita ex porro atque fugiat incidunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur deserunt dignissimos et accusamus facere odit doloremque, neque eos voluptatem asperiores illo voluptatibus nam eum quo placeat consequuntur totam eveniet odio? Modi totam eum nobis neque qui? Excepturi, numquam velit!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in assumenda mollitia quidem odio reprehenderit neque recusandae voluptatum cum, dicta magnam maxime quisquam porro! Ea aut, nesciunt iure hic eligendi maxime blanditiis voluptate beatae quas quam! Enim veritatis ratione culpa voluptatibus repellendus quo, mollitia eos sit eius quis, voluptas accusamus!</p>
+            <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookWill}}}>Book Will</Link>
+          </div>
+        </article>
+        <LotusDivider />
         <article id="questionnaire" className='mb-5'>
           <h2 className='title'>Not sure who?</h2>
           <p>Don't worry if you aren't sure what you are looking for. Click the link below to take a quick two question survey and we will determine the best course of action.</p>
@@ -84,35 +83,35 @@ const Home = () => {
         <div id="testimonialCarousel" class="carousel carousel-dark bg-light slide fw-light fst-italic" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div className="d-block w-100">
-                <img src={male} class="testimonialImg" alt="male headshot" />
+              <div className="d-block w-100 mt-5">
+                <h5>Lorem ipsum dolor sit amet consectetur.</h5>
               </div>
               <div class="carousel-caption d-block">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>-Person 1</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100">
-                <img src={female} class="testimonialImg" alt="female headshot" />
+              <div className="d-block w-100 mt-5">
+                <h5>Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</h5>
               </div>
               <div class="carousel-caption d-block">
-                <p>Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</p>
+                <p>-Person 2</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100">
-                <img src={male} class="testimonialImg" alt="male headshot" />
+              <div className="d-block w-100 mt-5">
+                <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, totam!</h5>
               </div>
               <div class="carousel-caption d-block">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, totam!</p>
+                <p>-Person 3</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100">
-                <img src={female} class="testimonialImg" alt="female headshot" />
+              <div className="d-block w-100 mt-5">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
               </div>
               <div class="carousel-caption d-block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>-Person 4</p>
               </div>
             </div>
           </div>
