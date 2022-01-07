@@ -50,7 +50,7 @@ const UserAgreement = () => {
       <h2 className="h-100 pt-5">Coaching Agreement</h2>
       <Divider />
       <form>
-        <div id="termsConditions" className="col-med-12">
+        <div id="termsConditions" className="col-med-12 text-start">
           <ol>
             <li>As a client, I understand and agree that I am fully responsible for my physical, mental and emotional well-being during my coaching calls, including my choices and decisions. I am aware that I can choose to discontinue coaching at any time.</li>
             <li>I understand that “coaching” is a Professional-Client relationship I have with my coach that is designed to facilitate the creation/development of personal, professional or business goals and to develop and carry out a strategy/plan for achieving those goals.</li>
@@ -97,7 +97,8 @@ const UserAgreement = () => {
           <h5>Confidentiality:</h5>
           <p>
             All information about the coach / client relationship will remain strictly confidential except in very rare circumstances where decreed by law; ie. where the court might issue a subpoena for the file or information.
-            <hr />
+          </p>
+          <p>
             If you wish for me as your coach to speak to someone outside our interactions, then you need to give me written permission (original letter, or email) to do so. Exceptions to confidentiality of course relate to circumstances such as intent to seriously harm someone, child abuse etc. Otherwise, all your information is confidential.
           </p>
           <p>

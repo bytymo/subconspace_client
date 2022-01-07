@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import tinaProfile from '../images/tinaProfile.jpg';
+import willProfile from '../images/willProfile.jpg';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -62,7 +63,7 @@ const Home = () => {
         <h2>Will Plantillas</h2>
         <article id="will" className='m-0 h-100 row d-flex justify-content-end profile-bg'>
           <div className="py-3 col-12 col-lg-3 m-auto">
-            <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
+            <img src={willProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
           </div>
           <div className='py-3 col-12 col-lg-7'>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error exercitationem optio cupiditate aperiam sed sequi, officia ipsam impedit minima rem veritatis. Voluptatibus perferendis ipsam illum doloribus quasi magni dignissimos.</p>
