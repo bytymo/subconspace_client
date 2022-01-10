@@ -19,7 +19,7 @@ const NewsletterModal = () => {
     console.log(personalInfo);
     axios({
       method: 'post',
-      url: '/users',
+      url: '/subscribers',
       data: {
         personalInfo
       }

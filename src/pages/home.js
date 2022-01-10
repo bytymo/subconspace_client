@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import tinaProfile from '../images/tinaProfile.jpg';
 import willProfile from '../images/willProfile.jpg';
+import sky from '../images/purple-sky-moon.jpg';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -17,7 +18,7 @@ const Home = () => {
   let btn;
 
   useEffect(() => {
-    setTimeout(function(){ btn.click(); }, 10000); // 10 second delay
+    setTimeout(function(){ btn && btn.click(); }, 10000); // 10 second delay
   }, [btn]);
 
   return (
@@ -38,12 +39,16 @@ const Home = () => {
       <div className="d-grid gap-3 w-100">
         <article className='p-3 bg-white text-dark'>
         <h1 className='title'>Who we are</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error exercitationem optio cupiditate aperiam sed sequi, officia ipsam impedit minima rem veritatis. Voluptatibus perferendis ipsam illum doloribus quasi magni dignissimos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui laudantium. Minus fuga inventore accusamus neque a, iure nesciunt aliquam veritatis fugiat laborum et consequuntur pariatur ratione quibusdam alias autem aut voluptates doloremque provident nam. Assumenda, officia! Ipsa sint facere omnis reprehenderit odio? Facere obcaecati quae ipsum assumenda, quaerat recusandae.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil doloribus consequatur suscipit adipisci expedita ex porro atque fugiat incidunt?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur deserunt dignissimos et accusamus facere odit doloremque, neque eos voluptatem asperiores illo voluptatibus nam eum quo placeat consequuntur totam eveniet odio? Modi totam eum nobis neque qui? Excepturi, numquam velit!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in assumenda mollitia quidem odio reprehenderit neque recusandae voluptatum cum, dicta magnam maxime quisquam porro! Ea aut, nesciunt iure hic eligendi maxime blanditiis voluptate beatae quas quam! Enim veritatis ratione culpa voluptatibus repellendus quo, mollitia eos sit eius quis, voluptas accusamus!</p>
+          <p>Our mission is to cultivate peace, encourage exploration, and spread a never-ending healing ripple effect, through our coaching and conscious wellness programs. Thoughtfully curated programs are designed and provide clients with the tools to aid in the journey of, but not limited to purpose identification, creative connection, stress reduction and mental wellness.</p>
         </article>
+        <div className="w-100 d-none d-md-block" style={{ 
+          height: '500px', 
+          backgroundImage: `url(${sky})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        </div>
         <h1 className='title'>Meet the coaches</h1>
         <h2>Tina Plantillas</h2>
         <article id="tina" className='m-0 row d-flex justify-content-end profile-bg'>
@@ -84,15 +89,15 @@ const Home = () => {
         <div id="testimonialCarousel" class="carousel carousel-dark bg-light slide fw-light fst-italic" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div className="d-block w-100 mt-5">
-                <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+              <div className="d-block w-100 mt-5 px-2 testimonial">
+                <h5>Having Tina as a life coach is an amazing experience. Her presence is very calming and loving; and we were able to create a realistic action plan that addressed all of my needs without feeling stressed or worried about executing it, but eager and excited to grow. I can't recommend her life coaching skills enough.</h5>
               </div>
               <div class="carousel-caption d-block">
-                <p>-Person 1</p>
+                <p>-Byron M.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100 mt-5">
+              <div className="d-block w-100 mt-5 px-2 testimonial">
                 <h5>Minima fugiat ducimus doloremque saepe consectetur ipsa repellat atque cum. Iste, fugiat!</h5>
               </div>
               <div class="carousel-caption d-block">
@@ -100,7 +105,7 @@ const Home = () => {
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100 mt-5">
+              <div className="d-block w-100 mt-5 px-2 testimonial">
                 <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, totam!</h5>
               </div>
               <div class="carousel-caption d-block">
@@ -108,7 +113,7 @@ const Home = () => {
               </div>
             </div>
             <div class="carousel-item">
-              <div className="d-block w-100 mt-5">
+              <div className="d-block w-100 mt-5 px-2 testimonial">
                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
               </div>
               <div class="carousel-caption d-block">
