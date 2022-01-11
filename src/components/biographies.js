@@ -38,7 +38,6 @@ export default function Biographies() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui laudantium. Minus fuga inventore accusamus neque a, iure nesciunt aliquam veritatis fugiat laborum et consequuntur pariatur ratione quibusdam alias autem aut voluptates doloremque provident nam. Assumenda, officia! Ipsa sint facere omnis reprehenderit odio? Facere obcaecati quae ipsum assumenda, quaerat recusandae.</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil doloribus consequatur suscipit adipisci expedita ex porro atque fugiat incidunt?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur deserunt dignissimos et accusamus facere odit doloremque, neque eos voluptatem asperiores illo voluptatibus nam eum quo placeat consequuntur totam eveniet odio? Modi totam eum nobis neque qui? Excepturi, numquam velit!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores in assumenda mollitia quidem odio reprehenderit neque recusandae voluptatum cum, dicta magnam maxime quisquam porro! Ea aut, nesciunt iure hic eligendi maxime blanditiis voluptate beatae quas quam! Enim veritatis ratione culpa voluptatibus repellendus quo, mollitia eos sit eius quis, voluptas accusamus!</p>
           <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookWill}}}>Book Will</Link>
         </div>
       </article>
