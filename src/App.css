@@ -232,3 +232,9 @@
 .testimonial {
   height: 100px;
 }
+
+@media (max-width: 991px) {
+  .testimonial {
+    height: 300px;
+  }
+}
