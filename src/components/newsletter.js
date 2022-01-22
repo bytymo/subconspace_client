@@ -13,7 +13,7 @@ export default function Newsletter() {
       <NewsletterModal />
       <button
         type="button"
-        class="btn btn-primary d-none"
+        className="btn btn-primary d-none"
         data-bs-toggle="modal"
         data-bs-target="#newsletter"
         ref={node => (btn = node)}
