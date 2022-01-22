@@ -1,28 +1,26 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from "axios";
+import config from '../config';
+
 
 const NewsletterModal = () => {
   const [modalDisplay, setModalDisplay] = useState('none');
   const [personalInfo, setPersonalInfo] = useState({
-    fullName: '',
+    name: '',
     email: '',
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setPersonalInfo({ ...personalInfo, [name]: value });
-    console.log(personalInfo);
   };
 
   const handleSubmit = () => {
-    console.log(personalInfo);
     axios({
       method: 'post',
-      url: '/subscribers',
-      data: {
-        personalInfo
-      }
+      url: `${config.API_URL}/subscribers`,
+      data: personalInfo
     });
   };
 
@@ -43,9 +41,9 @@ const NewsletterModal = () => {
           <div class="modal-body modal-text">
             Sign up for our weekly newsletter for exclusive content like meditation tips, recipes, and more!
             <form action="">
-              <div class="mb-3 text-start">
-                <label for="fullName" class="form-label">Name</label>
-                <input type="text" name="fullName" class="form-control" id="fullName" rows="3" placeholder="John Doe" onChange={handleChange} required></input>
+              <div className="mb-3 text-start">
+                <label htmlFor="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" rows="3" placeholder="John Doe" onChange={handleChange} required></input>
               </div>
               <div class="mb-3 text-start">
                 <label for="email" class="form-label">Email address</label>

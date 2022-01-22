@@ -18,7 +18,7 @@ export default function testimonials() {
         </div>
         <div class="carousel-item">
           <div className="d-block w-100 mt-5 px-2 testimonial">
-            <h5>What a camp man! From vegan meal plans and guidance to keeping my mind sharp, focused and on point. And the mental side of things...woooh. Its hard to really get across to people how important your mental health is in general and when it comes to the added stress of fight camp! Also fueling your body properly can help you in ways that pays dividends for years to come. Make sure you check Will out, very essential  part of any successful fighters camp!</h5>
+            <h5>What a camp man! From vegan meal plans and guidance to keeping my mind sharp, focused and on point. And the mental side of things...woooh. Its hard to really get across to people how important your mental health is in general and when it comes to the added stress of fight camp! Also fueling your body properly can help you in ways that pays dividends for years to come. Make sure you check Will out, very essential part of any successful fighters camp!</h5>
           </div>
           <div class="carousel-caption d-block">
             <p>-Von, <em>Professional Boxer</em></p>
