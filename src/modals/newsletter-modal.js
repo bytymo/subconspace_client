@@ -17,7 +17,6 @@ const NewsletterModal = () => {
   };
 
   const handleSubmit = () => {
-    console.log('url: ', config.API_URL);
     axios({
       method: 'post',
       url: `${config.API_URL}/users`,
