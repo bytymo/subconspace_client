@@ -1,15 +1,23 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react'
+import {isEmail} from 'validator';
 import axios from "axios";
 import config from '../config';
 
-
 const NewsletterModal = () => {
-  const [modalDisplay, setModalDisplay] = useState('none');
+  const [disabled, setDisabled] = useState(true);
   const [personalInfo, setPersonalInfo] = useState({
     name: '',
     email: '',
   });
+
+  useEffect(() => {
+    const {name, email} = personalInfo
+    if(name && (email && isEmail(email))){
+      setDisabled(false)
+    } else {
+      setDisabled(true)
+    }
+  }, [personalInfo]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,14 +32,8 @@ const NewsletterModal = () => {
     });
   };
 
-  const displayModal = () => {
-    setModalDisplay('block');
-  };
-
-  setTimeout(displayModal, 10000); // 10 seconds
-
   return (
-    <div style={{display: {modalDisplay}}} className="modal fade" id="newsletter" tabIndex="-1" aria-labelledby="ModalLabel" aria-hidden='true'>
+    <div className="modal fade" id="newsletter" tabIndex="-1" aria-labelledby="ModalLabel" aria-hidden='true'>
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content background-tint-modal">
           <div className="modal-header">
@@ -52,7 +54,7 @@ const NewsletterModal = () => {
             </form>
           </div>
           <div className="modal-footer">
-            <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Sign Up</button>
+            <button disabled={disabled} type="button" className={`btn ${disabled ? 'btn-outline-info' : 'btn-primary'}`} onClick={handleSubmit} data-bs-dismiss="modal">Sign Up</button>
           </div>
         </div>
       </div>
