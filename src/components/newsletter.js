@@ -5,7 +5,7 @@ export default function Newsletter() {
   let btn;
 
   useEffect(() => {
-    setTimeout(function(){ btn && btn.click(); }, 2000); // 10 second delay
+    setTimeout(function(){ btn && btn.click(); }, 10000); // 10 second delay
   }, [btn]);
 
   return (
