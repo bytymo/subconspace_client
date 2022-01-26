@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
+import Divider from '../components/divider';
 import Footer from '../components/footer';
 import frontCover from '../images/goddess-book-front.jpeg';
 
 
 const Book = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    console.log(window.innerWidth);
+    return setIsMobile(window.innerWidth <= 991)
+  }, []);
+  
   return (
-    <div>
+    <div className='bg-dark'>
       <h1>The Wellness Universe Guide to Complete Self-Care: 25 Tools for Goddesses</h1>
 
       <div className="row justify-content-around my-5">
-        <div className="col-4">
+        <div className="col order-2 order-md-1 col-12 col-md-4 px-5 px-md-0">
           <h5>
             25 dedicated Wellness Universe experts. . .
           </h5>
@@ -35,11 +42,20 @@ const Book = () => {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col order-1 order-md-2 col-12 col-md-4 px-5 px-md-0">
           <img src={frontCover} className="img-fluid" alt="..." />
         </div>
       </div>
-      <Footer />
+      {
+        !isMobile ? (
+          <Fragment>
+            <Divider />
+            <Footer />
+          </Fragment>
+        ) : (
+          <div className='p-0 m-0'/>
+        )
+      }
     </div>
   );
 };

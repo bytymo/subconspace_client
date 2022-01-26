@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import About from '../components/about';
+import BackgroundImage from '../components/backgroundImage';
 import Biographies from '../components/biographies';
 import Divider from '../components/divider';
 import Footer from '../components/footer';
@@ -10,18 +11,18 @@ import Testimonials from '../components/testimonials';
 
 const Home = () => {
   return (
-    <Fragment>
+    <div className='home'>
       <Newsletter />
       <Header />
       <Divider />
-      <div className="d-grid gap-3 w-100">
-        <About />
-        <Biographies />
-        <Testimonials />
-      </div>
+      <About />
+      <BackgroundImage />
+      <Biographies />
+      <BackgroundImage />
+      <Testimonials />
       <Divider />
       <Footer />
-    </Fragment>
+    </div>
   )
 }
 

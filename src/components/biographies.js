@@ -4,14 +4,13 @@ import tinaProfile from '../images/tinaProfile.jpg';
 import willProfile from '../images/willProfile.jpg';
 
 import LotusDivider from '../components/lotusDivider';
-import { Fragment } from 'react';
 
 
 export default function Biographies() {
   const bookWill = 'https://calendly.com/subconcoaching/15';
   const bookTina = 'https://calendly.com/subconcoachtina/15min';
   return (
-    <Fragment>
+    <section className='bg-dark py-3'>
       <h1 className='title'>Meet the coaches</h1>
       <h2>Tina Plantillas</h2>
       <article id="tina" className='m-0 row d-flex justify-content-end profile-bg'>
@@ -33,14 +32,14 @@ export default function Biographies() {
       <LotusDivider />
       <h2>Will Plantillas</h2>
       <article id="will" className='m-0 h-100 row d-flex justify-content-end profile-bg'>
-        <div className="py-3 col-12 col-lg-3 m-auto">
-          <img src={willProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
+        <div className="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0 w-md-100 m-md-auto">
+          <img src={willProfile} alt="Head profile of Will Plantillas" className="profileImgAlt px-0" />
         </div>
         <div className='py-3 col-12 col-lg-7'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum error exercitationem optio cupiditate aperiam sed sequi, officia ipsam impedit minima rem veritatis. Voluptatibus perferendis ipsam illum doloribus quasi magni dignissimos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui laudantium. Minus fuga inventore accusamus neque a, iure nesciunt aliquam veritatis fugiat laborum et consequuntur pariatur ratione quibusdam alias autem aut voluptates doloremque provident nam. Assumenda, officia! Ipsa sint facere omnis reprehenderit odio? Facere obcaecati quae ipsum assumenda, quaerat recusandae.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nihil doloribus consequatur suscipit adipisci expedita ex porro atque fugiat incidunt?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aspernatur deserunt dignissimos et accusamus facere odit doloremque, neque eos voluptatem asperiores illo voluptatibus nam eum quo placeat consequuntur totam eveniet odio? Modi totam eum nobis neque qui? Excepturi, numquam velit!</p>
+          <p>Will Plantillas is a Certified Plant-Based Nutrition Coach, Certified Personal Trainer, Mindset/Creative Coach and Luxury sales expert.</p>
+          <p>Will began his wellness journey in 2011 when his own health was in danger.  His health scare drove him to find ways to incorporate movement and better eating habits into his lifesyle.  With his own success he pursued the certifications in order to expand his knowledge base and share with as many souls as possible.</p>
+          <p>Will spent years training in martial arts and also coaching amatuer and professional athletes.  It began with physically training fighters and evolved into the total package of physical, mental, and emotional wellness.  Will works to develop his clients holistically with a natural approach.  His own experience has led him to a path of service to support clients to evolve to the best version of themselves.</p>
+          <p>Will has unmatched creativity; whether that comes in the form of project management, career in music, or with his art and spoken words.  His goal is to support other creatives in their journey of self improvement.</p>
           <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookWill}}}>Book Will</Link>
         </div>
       </article>
@@ -52,6 +51,6 @@ export default function Biographies() {
         <p>Don't worry if you aren't sure what you are looking for. Click the link below to take a quick two question survey and we will determine the best course of action.</p>
         <Link to={{pathname: '/booking', state: {bookWill: bookWill, bookTina: bookTina}}} className="btn btn-primary">Take survey</Link>
       </article>
-    </Fragment>
+    </section>
   )
 }

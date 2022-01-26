@@ -18,9 +18,27 @@
   min-height: 100vh;
 }
 
+.home{
+  background-image: url('./images/purple-sky-moon-square.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-light {
   background-color: var(--grey);
   color: var(--dark-grey);
+}
+
+.bg-dark {
+  background-color: var(--dark-grey) !important;
+  color: var(--grey);
+}
+
+.transparent { 
+  height: 500px;
+  background-color: 'transparent';
 }
 
 .text-purple {
@@ -41,9 +59,14 @@
 
 .container {
   min-height: 90vh;
-  margin: '50px';
-  padding: 10;
-  min-width: 90%;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.video-div {
+  font-size: 0;
 }
 
 .lotusVideo {
@@ -66,6 +89,12 @@
 
 .profileImg {
   border: 5px solid white;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.profileImgAlt {
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -103,6 +132,10 @@
 .modal-footer,
 .modal-header {
   border: none;
+}
+
+.navbar {
+  background-color: var(--dark-grey);
 }
 
 .nav-title {
@@ -181,12 +214,11 @@
 }
 
 .divider {
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   height: 40px;
   width: 100%;  
-  margin-bottom: 30px;
 }
 
 .carousel-item {
@@ -245,8 +277,20 @@
   height: 100px;
 }
 
+.footer {
+  padding-top: 16px;
+}
+
+.footer, .divider {
+  background-color: #333;
+}
+
 @media (max-width: 991px) {
   .testimonial {
+    height: 300px;
+  }
+
+  .transparent { 
     height: 300px;
   }
 }
