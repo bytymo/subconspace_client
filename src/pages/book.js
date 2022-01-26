@@ -7,7 +7,6 @@ import frontCover from '../images/goddess-book-front.jpeg';
 const Book = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    console.log(window.innerWidth);
     return setIsMobile(window.innerWidth <= 991)
   }, []);
   

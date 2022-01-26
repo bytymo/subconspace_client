@@ -1,9 +1,9 @@
 import React from 'react';
 
-const backgroundImage = () => {
+const BackgroundImage = () => {
   return (
     <div className="transparent" />
   );
 };
 
-export default backgroundImage;
+export default BackgroundImage;
