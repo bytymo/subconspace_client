@@ -28,7 +28,6 @@ const Booking = () => {
             <Link className='btn btn-primary w-100 h-100 surveyBtn' to={{pathname: '/agreement', state: {url: bookWill, message: option4}}}>{option4.toLocaleUpperCase()}</Link>
           </div>
         </div>
-        <a className="btn btn-outline-info" href='/thankyou' style={{marginTop: '50px'}}>To Thank you page</a>
       </div>
     </div>
   )

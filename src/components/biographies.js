@@ -24,7 +24,10 @@ export default function Biographies() {
           <p>Tina obtained her 200 hour Yoga Teacher training certification in 2012 and began guiding amateur and professional athletes, bringing her relaxation techniques to high level corporate employees, as well as facilitating movement events at the Phoenix Art Museum.</p>
           <p>Her empathic soul has lead her on a journey of service. Whether that involves guiding a mindful yoga class to corporate associates or coaching clients through the struggle of trying to find their soul’s purpose. Tina believes that to be truly happy one must be able to be open and connect to their highest self.</p>
           <p>Tina’s goal in life is to serve with love, and help others learn to love themselves on a deeper level. She helps her clients find joy in order to create a life that feels aligned with their souls. Her passion is assisting clients to be kind, patient, and compassionate to themselves and others.</p>
-          <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookTina}}}>Book Tina</Link>
+          <div className="d-grid gap-2 d-md-flex justify-content-evenly">
+            <Link className='btn btn-primary' to={{pathname: '/agreement', state: {url: bookTina}}}>Book Tina</Link>
+            <Link className='btn btn-secondary' to={{pathname: '/book'}}>Purchase book</Link>
+          </div>
         </div>
       </article>
       <LotusDivider />
