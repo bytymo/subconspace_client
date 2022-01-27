@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import About from '../components/about';
 import BackgroundImage from '../components/backgroundImage';
@@ -11,7 +11,7 @@ import Testimonials from '../components/testimonials';
 
 const Home = () => {
   return (
-    <div className='home'>
+    <Fragment>
       <Newsletter />
       <Header />
       <Divider />
@@ -22,7 +22,7 @@ const Home = () => {
       <Testimonials />
       <Divider />
       <Footer />
-    </div>
+    </Fragment>
   )
 }
 
