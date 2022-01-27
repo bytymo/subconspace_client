@@ -11,11 +11,11 @@ const Book = () => {
   }, []);
   
   return (
-    <div className='bg-dark'>
+    <div className='bg-dark h-100'>
       <h1>The Wellness Universe Guide to Complete Self-Care: 25 Tools for Goddesses</h1>
 
-      <div className="row justify-content-around my-5">
-        <div className="col order-2 order-md-1 col-12 col-md-4 px-5 px-md-0">
+      <div className="book-row row justify-content-around h-100 mt-3 mx-0 p-0">
+        <div className="col order-2 order-md-1 col-12 col-md-4 h-100 mt-3 mt-md-0 p-0">
           <h5>
             25 dedicated Wellness Universe experts. . .
           </h5>
@@ -41,8 +41,8 @@ const Book = () => {
             </div>
           </div>
         </div>
-        <div className="col order-1 order-md-2 col-12 col-md-4 px-5 px-md-0">
-          <img src={frontCover} className="img-fluid" alt="..." />
+        <div className="col order-1 order-md-2 col-12 col-md-4 mx-0 p-0">
+          <img src={frontCover} className="img-fluid p-0 m-0 w-100" alt="..." />
         </div>
       </div>
       {

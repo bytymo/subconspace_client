@@ -58,7 +58,8 @@
 }
 
 .container {
-  min-height: 90vh;
+  position: relative;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -275,6 +276,10 @@
 
 .testimonial {
   height: 100px;
+}
+
+.book-row {
+  min-height: 80vh;
 }
 
 .footer {
