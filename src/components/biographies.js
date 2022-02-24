@@ -14,8 +14,8 @@ export default function Biographies() {
       <h1 className='title'>Meet the coaches</h1>
       <h2>Tina Plantillas</h2>
       <article id="tina" className='m-0 row d-flex justify-content-end profile-bg'>
-        <div className="py-3 col-12 col-lg-3 m-auto">
-          <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg m-auto" />
+      <div className="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0 w-md-100 m-md-auto">
+          <img src={tinaProfile} alt="Head profile of Tina Plantillas" className="profileImg px-0" />
         </div>
         <div className='py-3 col-12 col-lg-7'>
           <p>Tina Plantillas is a Certified Spiritual Life Coach, Yoga and Meditation Teacher, Movement facilitator, and Commercial Credit Corporate extraordinaire.</p>
@@ -33,7 +33,7 @@ export default function Biographies() {
       <h2>Will Plantillas</h2>
       <article id="will" className='m-0 h-100 row d-flex justify-content-end profile-bg'>
         <div className="col-12 col-lg-3 d-flex align-items-center justify-content-center px-0 w-md-100 m-md-auto">
-          <img src={willProfile} alt="Head profile of Will Plantillas" className="profileImgAlt px-0" />
+          <img src={willProfile} alt="Head profile of Will Plantillas" className="profileImg px-0" />
         </div>
         <div className='py-3 col-12 col-lg-7'>
           <p>Will Plantillas is a Certified Plant-Based Nutrition Coach, Certified Personal Trainer, Mindset/Creative Coach and Luxury sales expert.</p>

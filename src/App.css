@@ -86,13 +86,6 @@
 }
 
 .profileImg {
-  border: 5px solid white;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-
-.profileImgAlt {
   width: 100%;
   padding: 10px;
   margin: 10px;
