@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Divider from '../components/divider';
 import Footer from '../components/footer';
-import frontCover from '../images/goddess-book-front.jpeg';
+import frontCover from '../images/goddess-book-front.png';
 
 
 const Book = () => {
