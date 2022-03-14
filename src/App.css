@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --primary: #5b3b97;
   --primary-light: #6b4ea1;
@@ -16,6 +18,11 @@
   background-color: var(--dark-grey);
   color: var(--grey);
   min-height: 100vh;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 .bg-light {

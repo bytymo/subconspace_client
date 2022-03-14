@@ -41,7 +41,7 @@ const NewsletterModal = () => {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div className="modal-body modal-text">
-            Sign up for our weekly newsletter for exclusive content like meditation tips, recipes, and more!
+            Sign up for exclusive content like meditation tips, recipes, and more!
             <form action="">
               <div className="mb-3 text-start">
                 <label htmlFor="name" className="form-label">Name</label>

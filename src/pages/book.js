@@ -15,7 +15,7 @@ const Book = () => {
       <h1 className='px-3'>The Wellness Universe Guide to Complete Self-Care: 25 Tools for Goddesses</h1>
 
       <div className="book-row row justify-content-around h-100 mt-3 mx-0 p-0">
-        <div className="col order-2 order-md-1 col-12 col-md-4 h-100 mt-3 mt-md-0 p-0 px-3">
+        <div className="col order-2 order-md-1 col-12 col-md-4 h-100 mt-3 mt-lg-5 p-0 px-3">
           <h5>
             25 dedicated Wellness Universe experts. . .
           </h5>
