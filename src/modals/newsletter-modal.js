@@ -27,7 +27,7 @@ const NewsletterModal = () => {
   const handleSubmit = () => {
     axios({
       method: 'post',
-      url: `${config.API_URL}/users`,
+      url: `${config.API_URL}/subscribers`,
       data: personalInfo
     });
   };
